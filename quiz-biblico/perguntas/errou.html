@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERROU</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+        body{
+            background-image: url(../images/errou.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 7em; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
+
+        .wrong {
+        font-family: "Jersey 10", serif;
+        font-size: 3em;
+        color: black;
+        background: lightgray;
+        border: 3px solid black;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        border-radius: 15px;
+        box-shadow: 3px 3px 2px black; 
+        transition: all 0.1s linear;
+        }
+
+        .wrong:active {
+        box-shadow: 1px 1px 0px black;
+        transform: translate(2px, 2px);
+        }
+    </style>
+</head>
+<body>
+    <button class="wrong" id="wrongbtt">Tente Novamente</button>
+
+    <script>
+        const wrongButton = document.getElementById('wrongbtt');
+
+        function wrongquiz(){
+           window.location.href = '01.html'
+        }
+
+        wrongButton.addEventListener('click', wrongquiz)
+    </script>
+    
+</body>
+</html>
